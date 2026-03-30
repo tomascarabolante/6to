@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <h1>Wiki Fandom</h1>
+        <img src="img/logo.png" alt="Logo del sitio ">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <h3>Registro</h3>
+
+            <div class="campo">
+                <label for="nickname">Nombre de usuario</label>
+                <input type="text" id="nickname" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" required>
+            </div>
+
+            <div class="campo">
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" required>
+            </div>
+
+            <div class="campo">
+                <label for="favorito">Personaje Favorito:</label>
+                <select id="favorito">
+                    <option value="sabio">Arthos el Sabio</option>
+                    <option value="hechicera">Lyra la Hechicera</option>
+                    <option value="guerrero">Draven el Guerrero</option>
+                    <option value="guardian">Kael el Guardián</option>
+                    <option value="oscuro">Morgath el Oscuro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <p>Tipo de Membresía</p>
+
+                <input type="radio" id="free" name="membresia" value="sí" checked>
+                <label for="free">Membresía Gratis</label>
+
+                <input type="radio" id="vip" name="membresia" value="no">
+                <label for="vip">Membresía VIP</label>
+            </div>
+
+            <div class="campo">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+
+            <div class="acciones">
+                <button type="submit">Registrarse</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© 2026 Wiki Fandom. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
