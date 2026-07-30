@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Página Principal - Registro de Productos</title>
+	<style>
+		body{font-family:Arial,Helvetica,sans-serif;margin:24px}
+		label{display:block;margin-top:12px}
+		input[type="text"], input[type="number"]{padding:8px;width:260px}
+		button{margin-top:12px;padding:8px 12px}
+		#displayArea{border:1px solid #ccc;padding:12px;margin-top:16px;display:none;background:#f9f9f9}
+		.field{margin:6px 0}
+	</style>
+</head>
+<body>
+	<h1>Registro de Productos</h1>
+
+	<label for="nombre">Nombre del producto:</label>
+	<input id="nombre" type="text" placeholder="Ingrese nombre del producto">
+
+	<label for="precio">Precio:</label>
+	<input id="precio" type="number" step="0.01" placeholder="0.00">
+
+	<div>
+		<button id="registrar" onclick="registrarProducto()">Registrar</button>
+		<button type="button" id="irInfo" onclick="cambiarPagina('informacion.html')">Ir a Información</button>
+	</div>
+
+	<div id="displayArea" aria-hidden="true">
+		<h2>Datos ingresados</h2>
+		<div class="field"><strong>Nombre:</strong> <span id="prodName"></span></div>
+		<div class="field"><strong>Precio:</strong> $<span id="prodPrice"></span></div>
+		<button id="limpiar" type="button" onclick="limpiar()">Limpiar</button>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
