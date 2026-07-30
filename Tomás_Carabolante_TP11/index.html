@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de tareas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Gestor de tareas</h1>
+
+    <form id="formTarea" class="formulario">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Ej. Estudiar para la evaluación" required>
+
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" name="descripcion" rows="3" placeholder="Describe la tarea" required></textarea>
+
+      <button type="submit">Agregar tarea</button>
+    </form>
+
+    <section class="lista-container">
+      <h2>Tareas pendientes</h2>
+      <ul id="listaTareas"></ul>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
