@@ -1,0 +1,1 @@
+"""Pruebas de aceptación de caja negra para TurnosYa."""
